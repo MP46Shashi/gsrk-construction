@@ -12,8 +12,125 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link href="css/responsive.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
+       
+
+        ul {
+            list-style: none;
+        }
+
+
+
+
+
+        .main-nav {
+            background-color: var(--nav-bg);
+            padding: 8px 0;
+        }
+
+        .main-nav img {
+            height: 30px;
+            margin-left: 32px;
+        }
+
+        .actions-menu {
+            font-size: 16px;
+            color: #666;
+            background-color: #fff;
+            padding: 16px;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin: 16px auto;
+            display: flex;
+        }
+
+        .actions-menu a {
+            font-weight: bold;
+            padding: 0 16px;
+            border-right: 1px solid #ccc;
+            display: inline-flex;
+        }
+
+        .actions-menu a img {
+            margin-right: 8px;
+        }
+
+        .actions-menu a:first-of-type {
+            padding-left: 0px;
+        }
+
+        .search {
+            margin: 16px auto;
+            padding: 16px 64px 24px 64px;
+            background-color: var(--search-bg);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .listings {
+            background-color: #fff;
+            padding: 24px;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .listings__heading {
+            font-size: 16px;
+            color: #222;
+            margin-bottom: 16px;
+        }
+
+        .listings__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-column-gap: 8px;
+            grid-row-gap: 24px;
+        }
+
+        .card {
+            background-color: rgb(255, 123, 53);
+            padding: 16px;
+            border: solid 1px #ccc;
+            max-width: 260px;
+            border-radius: 2px;
+        }
+
+        .card__logo {
+            border-radius: 2px;
+            height: 64px;
+            width: 64px;
+            margin: 4px 0;
+        }
+
+        .card__heading {
+            color: #222;
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        .card__text {
+            color: #000000;
+            font-size: 14px;
+        }
+
+        .card__text--small {
+            font-size: 12px;
+        }
+
+        .card__separator {
+            width: 32px;
+            border: none;
+            border-top: 1px solid #ccc;
+            height: 1px;
+            margin: 8px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -116,7 +233,7 @@
 
                                     </li>
                                     <li><a href="about.html">About</a></li>
-                                    <li ><a href="services.html">Services</a></li>
+                                    <li><a href="services.html">Services</a></li>
                                     <li class="dropdown"><a href="#">Projects</a>
                                         <ul>
                                             <li><a href="project.html">Projects Style One</a></li>
@@ -132,7 +249,7 @@
                                         <li><a href="404-page.html">404 Page</a></li>
                                     </ul>
                                 </li> -->
-                                <li class="current"><a href="Career.html">Career</a></li>
+                                    <li class="current"><a href="Career.html">Career</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
@@ -157,156 +274,107 @@
             </div>
         </section>
 
-        <!--Breadcrumb-->
-        <div class="theme-breadcrumb">
-            <div class="auto-container">
-                <ol class="breadcrumb" style="margin-bottom: 5px;">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Services</li>
-                </ol>
-            </div>
-        </div>
 
-        <!-- main section -->
 
-        <!-- welcome -->
-        <section id="welcome-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 wow fadeInLeft animated">
-                        <h1><span class="yellow-text">C</span>areer </h1>
-                        <div class="border-shade"><span><img src="./images/icons/home.jpeg" /><small></small></span>
+
+
+        <!--Default Intro Section-->
+        <div class="container" style="padding: 25px;">
+            <section class="listings container">
+                <h3 class="listings__heading">Based on your profile</h3>
+                <ul class="listings__grid">
+                    <li class="card">
+                        <img src="./images/icons/1.jpg" alt="" class="card__logo" />
+                        <div class="card__heading">jobs title:- <small>Construction Worker</small></div>
+                        <div class="card__text">Sallary: 520/-day</div>
+                        <div class="card__text"><strong>Qualifications:</strong><br />
+                            <ul>
+                                <li>Physical strength</li>
+
+                                <li>Hand-eye coordination</li>
+                                <li>Ability to follow instructions</li>
+                            </ul>
                         </div>
-                        <p>We at GSRK construction always have an eye for the right people who are ambitious, dedicated
-                            and willing to work with us. So if you are passionate about new ideas we will provide you
-                            the best working environment where you can grow and shape your future.</p>
+                        <div class="card__text card__text--small">9 connections</div>
+                        <div class="card__text card__text--small"><button href="https://docs.google.com/forms/d/e/1FAIpQLScBIstfWzn5WcaJowb9xjVDlBaEUeg2AI9AB_AS-uz_gYRzxg/viewform?usp=sf_link"  class="btn" style="font-size: 16px; padding: auto; margin-top: 10px;"> apply now</button></div><br/>
+                        <hr class="card__separator" />
+                        <div class="card__text card__text--small"> 6 days ago </div>
+                       
 
-                    </div>
-                    <div class="col-md-6 wow fadeInRight animated"><img src="images/background/footer-bg.jpg"
-                            class="img-responsive img-fluid" alt="GSRK Construction Bhopal"  style="border:1px solid rgb(11, 11, 11); border-radius: 45px;"/></div>
-                </div>
-            </div>
-        </section>
+                        <!-- <button class="job-card-menu-btn">···</button> -->
+                    </li>
+                    
+                    <li class="card">
+                        <img src="./images/icons/1.jpg" alt="" class="card__logo" />
+                        <div class="card__heading">jobs title:- <small>Construction Worker</small></div>
+                        <div class="card__text">Sallary: 520/-day</div>
+                        <div class="card__text"><strong>Qualifications:</strong><br />
+                            <ul>
+                                <li>Physical strength</li>
 
-        <section class="container" style="border:1px solid rgb(122, 116, 116); border-radius: 25px; margin-bottom: 40px;margin-top: 40px; background-color: rgb(32,46,49);">
-            <div class="text-center">
-                <h2>Join us <span class="theme_color">Today</span></h2>
-                <div class="text">We hire the best talent & brains from the industry. Fresher or experienced, if you
-                    have the passion to perform, drive to excel and are willing to “unlearn to learn”, GSRK Constructions
-                    is the right place. Drop us an email or visit our office, we are always at your service.</div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Required at GSRK Construction
-                        Head of Marketing</h2>
-                    <ul>
-                        <li>Experience - Experience of 10-15 years in the Real Estate Sector</li>
-                        <li>Experience of working with Prestigious builders (preferably Bhopal)</li>
-                        <li>Well versed with Social Media Marketing/Online marketing channels</li>
-                        <li>Comfortable with ERP systems and reporting online</li>
-                        <li>Flair of dealing with HNI and NRI clients</li>
+                                <li>Hand-eye coordination</li>
+                                <li>Ability to follow instructions</li>
+                            </ul>
+                        </div>
+                        <div class="card__text card__text--small">9 connections</div>
+                        <div class="card__text card__text--small"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBIstfWzn5WcaJowb9xjVDlBaEUeg2AI9AB_AS-uz_gYRzxg/viewform?usp=sf_link"  class="theme-btn btn-style-three"> apply now</a></div><br/>
+                        <hr class="card__separator" />
+                        <div class="card__text card__text--small"> 6 days ago </div>
+                       
 
-                    </ul>
-                    <h2>Roles and Responsibilities</h2>
-                    <ul class="list-style"> 
-                        <li>Set and achieve periodic sales targets</li>
-                        <li>Prepare and execute the overall Marketing Strategy to ensure site visit and conversion </li>
-                        <li>Lead and train the team of marketing executives</li>
-                        <li>Negotiate and finalise all sales deals with customers</li>
-                        <li>Handle offline and inline advertising channels with regular follow-up </li>
-                        <li>Coordinate the preparation of advertising collaterals  </li>
-                        <li>Ensure the upkeep and management of the Sample Houses </li>
-                        <li>Coordinate Corporate and upcountry sales plans </li>
-                        
-                         <p>E-mail you resume along with expected compensation on  - <a href="mailto:info@dkconstructionsbhopal.com" class="white-text"> info@dkconstructionsbhopal.com </a></p>
-                          
-                         
-                        </ul>
-                </div>
-                <div class="col-lg-6">
-                    <img src="./images/gallery/8.jpg" width="100%" class="img-fluid img-responsive" style="border:1px solid yellow; border-radius: 45px;"/>
-                </div>
-            </div>
-        </section>
+                        <!-- <button class="job-card-menu-btn">···</button> -->
+                    </li>
+                    
+                    <li class="card">
+                        <img src="./images/icons/1.jpg" alt="" class="card__logo" />
+                        <div class="card__heading">jobs title:- <small>Construction Worker</small></div>
+                        <div class="card__text">Sallary: 520/-day</div>
+                        <div class="card__text"><strong>Qualifications:</strong><br />
+                            <ul>
+                                <li>Physical strength</li>
 
+                                <li>Hand-eye coordination</li>
+                                <li>Ability to follow instructions</li>
+                            </ul>
+                        </div>
+                        <div class="card__text card__text--small">9 connections</div>
+                        <div class="card__text card__text--small"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBIstfWzn5WcaJowb9xjVDlBaEUeg2AI9AB_AS-uz_gYRzxg/viewform?usp=sf_link"  class="theme-btn btn-style-three"> apply now</a></div><br/>
+                        <hr class="card__separator" />
+                        <div class="card__text card__text--small"> 6 days ago </div>
+                       
+
+                        <!-- <button class="job-card-menu-btn">···</button> -->
+                    </li>
+                    
+                    <li class="card">
+                        <img src="./images/icons/1.jpg" alt="" class="card__logo" />
+                        <div class="card__heading">jobs title:- <small>Construction Worker</small></div>
+                        <div class="card__text">Sallary: 520/-day</div>
+                        <div class="card__text"><strong>Qualifications:</strong><br />
+                            <ul>
+                                <li>Physical strength</li>
+
+                                <li>Hand-eye coordination</li>
+                                <li>Ability to follow instructions</li>
+                            </ul>
+                        </div>
+                        <div class="card__text card__text--small">9 connections</div>
+                        <div class="card__text card__text--small"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBIstfWzn5WcaJowb9xjVDlBaEUeg2AI9AB_AS-uz_gYRzxg/viewform?usp=sf_link"  class="theme-btn btn-style-three"> apply now</a></div><br/>
+                        <hr class="card__separator" />
+                        <div class="card__text card__text--small"> 6 days ago </div>
+                       
+
+                        <!-- <button class="job-card-menu-btn">···</button> -->
+                    </li>
+                </ul>
+            </section>
+        </div>
         <!-- contact service -->
-        <section class="contact-section" style="background-image: url('./images/resource/resume.jpeg'); background-repeat: no-repeat;">
-        <div class="auto-container" style="display: flex;">
-            <!--Comment Form-->
-            <div class="contact-form-outer">
-                <div class="sidebar-title">
-                    <h3>Send Us Your Details</h3>
-                </div>
-
-                <div class="inner-box">
-                    <form method="post" action="sendemail.php" id="contact-form">
-                        <div class="row clearfix">
-                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
-                                <input type="text" name="username" value="" placeholder="YOUR NAME">
-                            </div>
-
-                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
-                                <input type="email" name="email" value="" placeholder="EMAIL ADDRESS">
-                            </div>
-
-                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
-                                <input type="text" name="phone" value="" placeholder="PHONE NUMBER" required>
-                            </div>
-
-                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
-                                <input type="text" name="subject" value="" placeholder="SUBJECT">
-                            </div>
-
-                            <div class="form-group col-lg-12 col-sm-12 col-xs-12">
-                                <textarea name="message" placeholder="MESSAGE"></textarea>
-                            </div>
-
-                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
-                                <input type="file" name="docs" value="" placeholder="upload your resume">
-                            </div>
-
-                            
-
-                        </div>
-                        <div class="text-left"><button type="submit" class="theme-btn btn-style-two">Send Now <span
-                                    class="icon icon-right flaticon-arrows-10"></span></button></div>
-                    </form>
-                </div>
-
-                <div class="contact-info clearfix">
-                    <!--Info Box-->
-                    <div class="column info-box">
-                        <div class="icon-box"><span class="flaticon-location"></span></div>
-                        <ul>
-                            <li><span class="small-title">Find us</span></li>
-                            <li><a href="#"><strong>22b, London</strong></a></li>
-                        </ul>
-                    </div>
-
-                    <!--Info Box-->
-                    <div class="column info-box">
-                        <div class="icon-box"><span class="flaticon-technology"></span></div>
-                        <ul>
-                            <li><span class="small-title">Call us today</span></li>
-                            <li><a href="#"><strong>+000-2415-145</strong></a></li>
-                        </ul>
-                    </div>
-
-                    <!--Info Box-->
-                    <div class="column info-box">
-                        <div class="icon-box"><span class="flaticon-note"></span></div>
-                        <ul>
-                            <li><span class="small-title">Email us now</span></li>
-                            <li><a href="#"><strong>sitename@email.com</strong></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
+        <!-- 
+        <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScBIstfWzn5WcaJowb9xjVDlBaEUeg2AI9AB_AS-uz_gYRzxg/viewform?embedded=true"
+        width="100%" height="1300" frameborder="0" marginheight="0" marginwidth="0"
+        style="overflow:hidden;">Loading…</iframe> -->
         <!--Main Footer-->
         <footer class="main-footer">
 
