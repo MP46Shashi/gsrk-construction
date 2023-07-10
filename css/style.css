@@ -5166,4 +5166,8 @@ color:white;
 	}
 
 	
-	
+@media screen  {
+	.short{
+		display: none;
+	}
+}
