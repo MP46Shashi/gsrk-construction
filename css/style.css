@@ -5150,7 +5150,7 @@ margin: 0 0 0rem;
 	border-radius: 25px;
 	margin: 1px;
 	padding: 10px 1px 10px 10px;
-	width: 350px;
+	width: auto;
 }
 .prob h3{
 	text-align: center;
